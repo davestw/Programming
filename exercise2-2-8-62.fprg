@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pea"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2562-08-03 10:07:10 PM"/>
+        <attribute name="created" value="cGVhO1BFQS1QQzsyNTYyLTA4LTAzOzA2OjQ1OjQ3IFBNOzIwMTI="/>
+        <attribute name="edited" value="cGVhO1BFQS1QQzsyNTYyLTA4LTAzOzEwOjA3OjEwIFBNOzM7MjEwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Score1" type="Real" array="False" size=""/>
+            <declare name="Score2" type="Real" array="False" size=""/>
+            <declare name="Score3" type="Real" array="False" size=""/>
+            <declare name="Score4" type="Real" array="False" size=""/>
+            <assign variable="Score1" expression="75.5"/>
+            <assign variable="Score2" expression="83.8"/>
+            <assign variable="Score3" expression="80"/>
+            <assign variable="Score4" expression="95.80"/>
+            <output expression="&quot;----You Score ----&quot;" newline="True"/>
+            <output expression="&quot;Foundtion English : = &quot; &amp; Score1" newline="True"/>
+            <output expression="&quot;General Business : = &quot; &amp; Score2" newline="True"/>
+            <output expression="&quot;Introduction to Computer Systems : = &quot; &amp; Score3" newline="True"/>
+            <output expression="&quot;Computer Programming : = &quot; &amp;Score4" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
