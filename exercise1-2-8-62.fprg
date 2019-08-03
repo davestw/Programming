@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pea"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2562-08-03 10:40:26 PM"/>
+        <attribute name="created" value="cGVhO1BFQS1QQzsyNTYyLTA4LTAzOzA1OjI4OjAyIFBNOzIwMDM="/>
+        <attribute name="edited" value="cGVhO1BFQS1QQzsyNTYyLTA4LTAzOzEwOjQwOjI2IFBNOzM7MjEwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="High" type="Real" array="False" size=""/>
+            <declare name="Weight" type="Real" array="False" size=""/>
+            <declare name="BMI" type="Real" array="False" size=""/>
+            <input variable="High"/>
+            <input variable="Weight"/>
+            <assign variable="BMI" expression="Weight/(High/100)^2"/>
+            <output expression="&quot;BMI = &quot;&amp;BMI" newline="True"/>
+            <if expression="BMI &gt;= 23">
+                <then>
+                    <output expression="&quot;Fat&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="BMI &gt;= 18.5">
+                        <then>
+                            <output expression="&quot;Normal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Thin&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
